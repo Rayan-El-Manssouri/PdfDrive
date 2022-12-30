@@ -4,6 +4,9 @@ require '../vendor/autoload.php';
 
 use Spipu\Html2Pdf\Html2Pdf;
 
+$TopDivVehicule = "-17px";
+$TopDivVehicule2Partie = "-30px";
+
 $html = "
     <!-- Contenue -->
     <div>
@@ -16,7 +19,7 @@ $html = "
         <img src='./src/logo_cerfa.png' style='width: 75px; position: absolute; top: 10px; left: 650px;' >
         <span style=' position: absolute; top: -20px; left: 645px; font-weight: bold;'>N° 15776*02</span>
         <span style=' position: absolute; top: 40px; left: 540px; font-style: italic; font-size: 10px;'>Exemplaire 1 destiné à l’ancien propriétaire</span>
-        <div style='position: absolute; top: 60px; left: -21.5px; top: 75px;'>
+        <div style='position: absolute;  left: -21.5px; top: 55px;'>
             <span style=' position: absolute; top: 99.2px; left: 30px;'>|</span>
             <span style=' position: absolute; top: 99.2px; left: 50px;'>|</span>
             <span style=' position: absolute; top: 99.2px; left: 70px;'>|</span>
@@ -27,11 +30,12 @@ $html = "
             <span style=' position: absolute; top: 99.2px; left: 170px;'>|</span>
             <span style=' position: absolute; top: 99.2px; left: 190px;'>|</span>
             <span style=' position: absolute; top: 110px; left: 28px; font-size: 8px;'>(A) Numéro d’immatriculation du véhicule</span>
+            <div style='position: absolute; border-bottom: 1px solid black; width: 164.5px; top: 113px; left: 31.5px;' ></div>
+
         </div>
-        <div style='position: absolute; border-bottom: 1px solid black; width: 164.5px; top: 188px; left: 10px;' ></div>
 
 
-        <div style='position: absolute; left: -20px; top: 3px;'>
+        <div style='position: absolute; left: -20px; top: -17px;'>
             <div style='position: absolute; border-bottom: 1px solid black; width: 325px; top: 185px; left: 205px;' ></div>
             <span style=' position: absolute; top: 171px; left: 204px;'>|</span>
             <span style=' position: absolute; top: 171px; left: 224px;'>|</span>
@@ -54,15 +58,14 @@ $html = "
 
         </div>
 
-
-        <div style='position: absolute; left: -20px; top: 3px;'>
+        <div style='position: absolute; left: -20px; top: $TopDivVehicule;'>
             <div style='position: absolute; border-bottom: 1px solid black; width: 45px; top: 185px; left: 545px;' ></div>
             <span style=' position: absolute; top: 171px; left: 543.6px;'>|</span>
             <span style=' position: absolute; top: 171px; left: 563.6px;'>|</span>
             <span style=' position: absolute; top: 171px; left: 584px;'>|</span>
         </div>
 
-        <div style='position: absolute; left: 35px; top: 3px;'>
+        <div style='position: absolute; left: 35px; top: $TopDivVehicule;'>
             <div style='position: absolute; border-bottom: 1px solid black; width: 45px; top: 185px; left: 545px;' ></div>
             <span style=' position: absolute; top: 171px; left: 543.6px;'>|</span>
             <span style=' position: absolute; top: 171px; left: 563.6px;'>|</span>
@@ -70,7 +73,7 @@ $html = "
         </div>
 
 
-        <div style='position: absolute; left: -30px; top: 3px;'>
+        <div style='position: absolute; left: -30px; top: $TopDivVehicule;'>
             <div style='position: absolute; border-bottom: 1px solid black; width: 65px; top: 185px; left: 665px;' ></div>
             <span style=' position: absolute; top: 171px; left: 663.8px;'>|</span>
             <span style=' position: absolute; top: 171px; left: 683.8px;'>|</span>
@@ -79,7 +82,10 @@ $html = "
             <span style=' position: absolute; top: 191px; left: 550px; font-size: 8px;'>(B) Date de 1re immatriculation du véhicule</span>
         </div>
 
-        <div style='position: absolute; left: -24px; top: -10px;'>
+
+
+
+        <div style='position: absolute; left: -24px; top: $TopDivVehicule2Partie;'>
             <div style='position: absolute; border-bottom: 1px solid black; width: 161px; top: 230px; left: 35px;' ></div>
             <span style='position: absolute; top: 215.5px; left: 33.7px;'>|</span>
             <span style='position: absolute; top: 215.5px; left: 190px;'>|</span>
@@ -88,7 +94,7 @@ $html = "
         </div>
     
 
-        <div style='position: absolute; left: -24px; top: -10px;'>
+        <div style='position: absolute; left: -24px; top: $TopDivVehicule2Partie;'>
             <div style='position: absolute; border-bottom: 1px solid black; width: 145px; top: 230px; left: 210px;' ></div>
             <span style='position: absolute; top: 216px; left: 208.6px;'>|</span>
             <span style='position: absolute; top: 216px; left: 349px;'>|</span>
@@ -96,14 +102,14 @@ $html = "
         </div>
 
 
-        <div style='position: absolute; left: -29px; top: -10px;'>
+        <div style='position: absolute; left: -29px; top: $TopDivVehicule2Partie;'>
             <div style='position: absolute; border-bottom: 1px solid black; width: 160px; top: 230px; left: 380px;' ></div>
             <span style='position: absolute; top: 216px; left: 378.6px;'>|</span>
             <span style='position: absolute; top: 216px; left: 534px;'>|</span>
             <span style='position: absolute; top: 235px; left: 380px; font-size: 10px;'>(J.1 Genre national)</span>
         </div>
 
-        <div style='position: absolute; left: -24px; top: -10px;'>
+        <div style='position: absolute; left: -24px; top: $TopDivVehicule2Partie;'>
             <div style='position: absolute; border-bottom: 1px solid black; width: 174px; top: 230px; left: 550px;' ></div>
             <span style='position: absolute; top: 216px; left: 548.7px;'>|</span>
             <span style='position: absolute; top: 216px; left: 718px;'>|</span>
@@ -111,11 +117,11 @@ $html = "
         </div>
 
 
-        <span style='position: absolute; top: 247px; left: 12px; font-size: 11px; '>Kilométrage inscrit au compteur du véhicule :</span>
+        <span style='position: absolute; top: 227px; left: 12px; font-size: 11px; '>Kilométrage inscrit au compteur du véhicule :</span>
 
 
 
-        <div style='position: absolute; left: -105px; top: -30px;'>
+        <div style='position: absolute; left: -105px; top: -50px;'>
             <div style='position: absolute; border-bottom: 1px solid black; width: 161px; top: 290px; left: 345px;' ></div>
             <span style='position: absolute; top: 276px; left: 343.7px;'>|</span>
             <span style='position: absolute; top: 276px; left: 500px;'>|</span>
@@ -123,10 +129,10 @@ $html = "
 
 
 
-        <span style='position: absolute; top: 266px; left: 12px; font-size: 12px '>Présence du certificat d’immatriculation :</span>
+        <span style='position: absolute; top: 250px; left: 12px; font-size: 12px '>Présence du certificat d’immatriculation :</span>
 
 
-        <div style='position: absolute; top: -42px; left: -25px;'>
+        <div style='position: absolute; top: -62px; left: -25px;'>
             <input style='position: absolute; top: 335px; left: 35px; font-weight: bold;' type='checkbox' >
             <span style='position: absolute; top: 335px; left: 55px; '>OUI – numéro de formule</span> 
             <div style='border-bottom: 1px solid black; width: 200px; position: absolute; top: 345px; left: 215px; '></div>
@@ -147,7 +153,7 @@ $html = "
         </div>
 
 
-        <div style='position:absolute; left: -120px; top: -40px;'>
+        <div style='position:absolute; left: -120px; top: -60px;'>
             <div style='border-bottom: 1px solid black; width: 44.5px; position: absolute; top: 380px; left: 400px;'></div>
             <span  style='position: absolute; top: 365.8px; left: 398.7px;'>|</span>
             <span  style='position: absolute; top: 365.8px; left: 418.7px;'>|</span>
@@ -163,14 +169,14 @@ $html = "
             <span style='position: absolute; top: 365.8px; left: 576.7px;'>|</span>
             <span style='position: absolute; top: 365.8px; left: 596.7px;'>|</span>
         </div>
-        <div style='position: absolute; left: -40px;'>
+        <div style='position: absolute; left: -40px; top: -20px;'>
             <div style='border-bottom: 1px solid black; width: 214px; position: absolute; top: 340px; left: 528px;'></div>
             <div style='border-bottom: 1px solid black; width: 214px; position: absolute; top: 320px; left: 528px;'></div>
             <span><input style=' position: absolute; top: 290px; left: 528px;' type='checkbox'></span>
             <span style=' position: absolute; top: 294px; left: 547px; font-size: 8px;'>NON – Motif d’absence de certificat d’immatriculation :</span>
-            <div style='border: 2px solid #0B368C; position: absolute; height: 200px; width: 730px; top: 150px; left: 40px;  z-index: 1;' ></div>
         </div>
 
+            <div style='border: 2px solid #0B368C; position: absolute; height: 200px; width: 730px; top: 136px;   z-index: 1;' ></div>
 
         <div>
         
@@ -178,13 +184,18 @@ $html = "
 
 
 
-      <div style=' position: absolute; height: 20px; width: 320px; left: 25px; top: 142px; background-color: #fff; color: #0B368C; font-weight: bold;  z-index: 1; text-align: center;'> LE VÉHICULE (à remplir par l’ancien propriétaire)</div> 
-        <div style='border: 2px solid  #0B368C; position: absolute; height: 430px; width: 730px; top: 375px; z-index: 1;' ></div>
-        <div style='border: 2px solid  #0B368C; position: absolute; height: 250px; width: 730px; top: 825px; z-index: 1;' ></div>
-        <div style=' position: absolute; height: 20px; width: 150px; left: 25px; top: 366px; background-color: #fff; color: #0B368C; font-weight: bold;  z-index: 2; text-align: center;'>Ancien propriétaire</div>
-        <div style=' position: absolute; height: 20px; width: 150px; left: 25px; top: 820px; background-color: #fff; color: #0B368C; font-weight: bold;  z-index: 2; text-align: center;'>Nouveau propriétaire</div>
+      <div style=' position: absolute; height: 20px; width: 320px; left: 25px; top: 130px; background-color: #fff; color: #0B368C; font-weight: bold;  z-index: 1; text-align: center;'> LE VÉHICULE (à remplir par l’ancien propriétaire)</div> 
+        <!-- Border pour la parti Ancien propriétaire  -->  
+        <div style='border: 2px solid  #0B368C; position: absolute; height: 410px; width: 730px; top: 355px; z-index: 1;' ></div>
+      
+       
+        <div style=' position: absolute; height: 20px; width: 150px; left: 25px; top: 347px; background-color: #fff; color: #0B368C; font-weight: bold;  z-index: 2; text-align: center;'>Ancien propriétaire</div>
 
-        <div style='position: absolute; top: -125px; font-size: 13px; left: -25px;'>
+        <!-- Border pour la parti Nouveu propriétaire  -->  
+        <div style='border: 2px solid  #0B368C; position: absolute; height: 300px; width: 730px; top: 788px; z-index: 1;' ></div>
+        <div style=' position: absolute; height: 20px; width: 150px; left: 25px; top: 780px; background-color: #fff; color: #0B368C; font-weight: bold;  z-index: 2; text-align: center;'>Nouveau propriétaire</div>
+
+        <div style='position: absolute; top: -145px; font-size: 13px; left: -25px;'>
             <input style='position: absolute; left: 35px; top: 520px;' type='checkbox'>
             <span style='position: absolute; font-weight: bold; left: 50px; top: 520px;'>Personne physique ou entreprise morale</span>
             <div style='position: absolute;  border-bottom: 1px solid black; width: 10px; top: 528px; left: 320px;'></div>
@@ -197,7 +208,7 @@ $html = "
             <span style='position: absolute; font-weight: bold; left: 50px; top: 540px;'>Personne morale</span>
         </div>
 
-        <div style='position: absolute; top: -130px; left: -25px;'>
+        <div style='position: absolute; top: -150px; left: -25px;'>
             <span style='position: absolute;  left: 35px; top: 580px;'>Je soussigné(e),</span>
             <div style='position: absolute; border-bottom: 1px solid black; width: 310px; top: 590px; left: 150px;' ></div>
             <span style='position: absolute;  left: 148px; top: 580px; top: 576.5px;'>|</span>
@@ -226,7 +237,7 @@ $html = "
     
         </div>
 
-        <div style='position: absolute;  top: -130px; left: -25px;'>
+        <div style='position: absolute;  top: -150px; left: -25px;'>
             <span style='position: absolute;  left: 35px; top: 620px; font-size: 15px;'>Adresse complète :</span>
             <span style='position: absolute;  left: 174px; top: 614.5px; font-size: 15px;'>|</span>
             <span style='position: absolute;  left: 254px; top: 614.5px; font-size: 15px;'>|</span>
@@ -261,7 +272,7 @@ $html = "
 
 
 
-        <div style='position: absolute;  top: -135px; left: -28px;'>
+        <div style='position: absolute;  top: -160px; left: -28px;'>
             <span style='position: absolute;  left: 35px; top: 700px; font-size: 15px; font-weight: bold;'>Certifie</span>
             <span style='position: absolute;  left: 90px; top: 700px; font-size: 10px;'>(veuillez cocher la case correspondante) :</span>
             <span style='position: absolute;  left: 290px; top: 700px; font-size: 10px;'><input type='checkbox'; ></span>
@@ -272,7 +283,7 @@ $html = "
 
 
 
-        <div style='position: absolute;  top: -150px; left: -28px;'>
+        <div style='position: absolute;  top: -170px; left: -28px;'>
             <span style='position: absolute;  left: 35px; top: 742px; font-size: 15px; font-weight: bold;'>Le</span>
             <div style='border-bottom: 1px solid black; width: 44.5px; position: absolute; top: 752px; left: 70px;'></div>
             <div style='border-bottom: 1px solid black; width: 41px; position: absolute; top: 752px; left: 120px;'></div>
@@ -314,26 +325,44 @@ $html = "
             <span style='position: absolute;  left: 60px; top: 877px; font-size: 11px;'> est obligatoire si le véhicule est une voiture particulière, une camionnette ou un cyclomoteur à trois roues.</span>
             <span style='position: absolute;  left: 60px; top: 888px; font-size: 11px;'>La liste des professionnels agréés est disponible sur https://immatriculation.ants.gouv.fr).</span>
             <span style='position: absolute;  left: 60px; top: 900px; font-size: 11px; font-weight: bold;'>Fait à _______________________ , le_________________  </span>
-            <span style='position: absolute;  left: 500px; top: 904px; font-size: 12px; '>Signature de l’ancien propriétaire,</span>
-            <span style='position: absolute;  left: 515px; top: 917px; font-size: 9px; '>(Pour les sociétés : nom et qualité</span>
-            <span style='position: absolute;  left: 535px; top: 927px; font-size: 9px; '>du signataire et cachet)</span>
+        
+           
+        </div>
+
+        <!-- Signature -->
+        <div style='position: absolute; width: 300px; left: 500px; top: 720px;'>
+            <span style='position: absolute;   font-size: 12px; '>Signature de l’ancien propriétaire,</span>
+            <span style='position: absolute;  top: 10px; left: 20px; font-size: 9px; width: 300px; '>(Pour les sociétés : nom et qualité</span>
+            <span style='position: absolute; top: 20px;  left: 35px; font-size: 9px; '>du signataire et cachet)</span>
         </div>
 
 
-      <span  style='position: absolute; left: 15px; top: 850px;'><input type='checkbox' ></span> 
-      <span  style='position: absolute; left: 28px; top: 850px; font-weight: bold;'>Personne physique ou entreprise morale — Sexe :</span> 
-      <span  style='position: absolute; left: 358px; top: 850px; font-weight: bold;'>M</span> 
-      <span  style='position: absolute; left: 378px; top: 850px; font-weight: bold;'><input type='checkbox' ></span> 
-      <span  style='position: absolute; left: 398px; top: 850px; font-weight: bold;'>F</span> 
-      <span  style='position: absolute; left: 418px; top: 850px; font-weight: bold;'><input type='checkbox' ></span> 
-      <span  style='position: absolute; left: 15px; top: 870px;'><input type='checkbox' ></span> 
-      <span  style='position: absolute; left: 28px; top: 870px; font-weight: bold;'>Personne morale</span> 
-      <span  style='position: absolute; left: 15px; top: 890px;'>Je soussigné(e),</span> 
-      <div style='position: absolute; top: -30px;'>
+        <!-- Signature -->
+        <div style='position: absolute; width: 300px; left: 500px; top: 1040px;'>
+            <span style='position: absolute;   font-size: 12px; '>Signature de l’ancien propriétaire,</span>
+            <span style='position: absolute;  top: 10px; left: 20px; font-size: 9px; width: 300px; '>(Pour les sociétés : nom et qualité</span>
+            <span style='position: absolute; top: 20px;  left: 35px; font-size: 9px; '>du signataire et cachet)</span>
+        </div>
+
+        <div  style='position: absolute;  top: -50px;'>
+            <span  style='position: absolute; left: 15px; top: 850px;'><input type='checkbox' ></span> 
+            <span  style='position: absolute; left: 28px; top: 850px; font-weight: bold;'>Personne physique ou entreprise morale — Sexe :</span> 
+            <span  style='position: absolute; left: 358px; top: 850px; font-weight: bold;'>M</span> 
+            <span  style='position: absolute; left: 378px; top: 850px; font-weight: bold;'><input type='checkbox' ></span> 
+            <span  style='position: absolute; left: 398px; top: 850px; font-weight: bold;'>F</span> 
+            <span  style='position: absolute; left: 418px; top: 850px; font-weight: bold;'><input type='checkbox' ></span> 
+            <span  style='position: absolute; left: 15px; top: 870px;'><input type='checkbox' ></span> 
+            <span  style='position: absolute; left: 28px; top: 870px; font-weight: bold;'>Personne morale</span> 
+        </div>
+    
+
+    <div  style='position: absolute;  top: -40px;'>
+        <span  style='position: absolute; left: 15px; top: 890px;'>Je soussigné(e),</span> 
+        <div style='position: absolute; top: -30px;'>
         <span  style='position: absolute; left: 403px; top: 915.8px;'>|</span>
         <span  style='position: absolute; left: 120px; top: 915.8px;'>|</span>  
         <div style='position: absolute; border-bottom: 1px solid black; width: 280px; left: 125px; top: 930px;' ></div>
-      </div>
+        </div>
         <div style='position: absolute; top: -30px; left: -10px;'>
             <div style='position: absolute; border-bottom: 1px solid black; width: 284.7px; left: 435px; top: 930px;' ></div>
             <span  style='position: absolute; left: 433.7px; top: 915.8px;'>|</span> 
@@ -352,8 +381,12 @@ $html = "
             <span  style='position: absolute; left: 693.7px; top: 915.8px;'>|</span> 
             <span  style='position: absolute; left: 713.7px; top: 915.8px;'>|</span> 
         </div>
+    </div>
 
-        <div style='position: absolute; top: -20px;'>
+
+
+
+        <div style='position: absolute; top: -60px;'>
             <span  style='position: absolute; left: 15px; top: 940px;'>Né (e) le,</span> 
             <span  style='position: absolute; left: 79px; top: 936.5px;'>|</span> 
             <span  style='position: absolute; left: 99px; top: 936.5px;'>|</span> 
@@ -377,7 +410,7 @@ $html = "
      
 
 
-      <div style='position: absolute;  top: 330px; left: -20px; font-size: 14px;'>
+      <div style='position: absolute;  top: 300px; left: -20px; font-size: 14px;'>
         <span style='position: absolute;  left: 35px; top: 620px; font-size: 15px;'>Adresse complète :</span>
         <span style='position: absolute;  left: 174px; top: 614.5px; font-size: 15px;'>|</span>
         <span style='position: absolute;  left: 254px; top: 614.5px; font-size: 15px;'>|</span>
@@ -407,10 +440,21 @@ $html = "
         <span style='position: absolute;  left: 743.5px; top: 654.6px; font-size: 15px;'>|</span>
         <span style='position: absolute;  left: 270px; top: 672px; font-size: 10px;'>Commune</span>
     </div>
-    <span style='position: absolute;  left: 15px; top: 1020px; font-size: 15px; font-weight: bold;'>Certifie</span>
-    <span style='position: absolute;  left: 65px; top: 1025px; font-size: 10px; '>(veuillez cocher la case correspondante) : </span>
-    <span style='position: absolute;  left: 15px; top: 1045px;'><input type='checkbox' > </span>
-    <span style='position: absolute;  left: 30px; top: 1045px; font-size: 12px;'>Acquérir le véhicule désigné ci-dessus aux dates et heures indiquées par l’ancien propriétaire ; </span>
+    <div style='position: absolute; top: -35px; '>
+        <span style='position: absolute;  left: 15px; top: 1020px; font-size: 15px; font-weight: bold;'>Certifie</span>
+        <span style='position: absolute;  left: 65px; top: 1025px; font-size: 10px; '>(veuillez cocher la case correspondante) : </span>
+        <span style='position: absolute;  left: 15px; top: 1045px;'><input type='checkbox' > </span>
+        <span style='position: absolute;  left: 30px; top: 1045px; font-size: 12px; font-weight: bold;'>Acquérir le véhicule désigné ci-dessus aux dates et heures indiquées par l’ancien propriétaire ; </span>
+        <span style='position: absolute;  left: 15px; top: 1065px;'><input type='checkbox' > </span>
+        <span style='position: absolute;  left: 30px; top: 1065px; font-size: 12px; font-weight: bold;'>Avoir été informé de la situation administrative du véhicule. </span>
+        <span style='position: absolute;  left: 30px; top: 1090px; font-size: 12px; '>Fait à _______________________, le_________________ </span>
+
+
+    </div>
+    <div style='position: absolute; width: 750px; text-align: center; top: 1100px;'>
+        <span style='font-weight: bold;' >Je m’oppose à la réutilisation de mes données personnelles à des fins de prospection commerciale <input type='checkbox' > </span>
+    
+    </div>
 
    </div>
 
