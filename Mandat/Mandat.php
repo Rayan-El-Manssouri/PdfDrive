@@ -81,6 +81,7 @@ $html = "
 
 </style>
 <page>
+    <link rel='icon' href='./src/fleche.png' >
     <!-- Haut de page -->
     <div class='header'>
         <!-- Logo du ministerer de l'intérieur -->
@@ -169,7 +170,7 @@ $html = "
                 <div style='width: 254px; position: absolute; top: 164.4px; left: 570px; border-bottom: 1px solid black;'></div>
                 <span style='position: absolute; top: 151px; left: 568px;'>|</span>
                 <span style='position: absolute; top: 151px; left: 819px;'>|</span>
-            </div>
+            </div> 
             <!-- Text adresse -->
             <div style='ont-weight: none; font-size: 10px;position: absolute; top: 290px; left: 130px;'>
                 <span>Code postal</span>

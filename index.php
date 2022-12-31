@@ -1,3 +1,8 @@
+<!-- 
+
+Gestionnaire des pdf avec la librari html2pdf Lien : https://github.com/spipu/html2pdf
+
+-->
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -22,10 +27,10 @@
     <button>
         <a href="./Declaration_de_cession/Declaration_de_cession.php">Déclaration de cession</a>
         <br>
-        <span>A faire</span>
+        <span>Fait !</span>
     </button>
     <button>
-        <a href="">Déclaration de immatriculation</a>
+        <a href="./Declaration_de_immatriculation/Declaration_de_immatriculation.php">Déclaration de immatriculation</a>
         <br>
         <span>A faire</span>
     </button>

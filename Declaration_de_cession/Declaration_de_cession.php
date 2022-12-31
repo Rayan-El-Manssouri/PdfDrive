@@ -11,7 +11,6 @@ $html = "
     <!-- Contenue -->
     <div>
 
-
         <img src='./src/logo.jpg' style='width: 81px; position: absolute; top: 10px;' >
         <span style='position: absolute; left: 160px; top: -50px; font-weight: bold; color: #0B368C; font-size: 15px; '>CERTIFICAT DE CESSION D’UN VÉHICULE D’OCCASION</span>
         <span style='position: absolute; left: 150px; top: -15px; font-weight: bold; color: #0B368C; font-size: 15px; '>(à remplir par l’ancien propriétaire et le nouveau proprietaire)</span>
