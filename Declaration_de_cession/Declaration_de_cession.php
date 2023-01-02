@@ -11,11 +11,11 @@ $html = "
     <!-- Contenue -->
     <div>
 
-        <img src='./src/logo.jpg' style='width: 81px; position: absolute; top: 10px;' >
+        <img src='../asset/pdf/logo.jpg' style='width: 81px; position: absolute; top: 10px;' >
         <span style='position: absolute; left: 160px; top: -50px; font-weight: bold; color: #0B368C; font-size: 15px; '>CERTIFICAT DE CESSION D’UN VÉHICULE D’OCCASION</span>
         <span style='position: absolute; left: 150px; top: -15px; font-weight: bold; color: #0B368C; font-size: 15px; '>(à remplir par l’ancien propriétaire et le nouveau proprietaire)</span>
         <span style='position: absolute; left: 200px; top: 15px; font-size: 15px; '>Articles R322-4 et R322-9 du code de la route</span>
-        <img src='./src/logo_cerfa.png' style='width: 75px; position: absolute; top: 10px; left: 650px;' >
+        <img src='../asset/pdf/logo_cerfa.png' style='width: 75px; position: absolute; top: 10px; left: 650px;' >
         <span style=' position: absolute; top: -20px; left: 645px; font-weight: bold;'>N° 15776*02</span>
         <span style=' position: absolute; top: 40px; left: 540px; font-style: italic; font-size: 10px;'>Exemplaire 1 destiné à l’ancien propriétaire</span>
         <div style='position: absolute;  left: -21.5px; top: 55px;'>

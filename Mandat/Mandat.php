@@ -85,7 +85,7 @@ $html = "
     <!-- Haut de page -->
     <div class='header'>
         <!-- Logo du ministerer de l'intérieur -->
-        <img src='./src/logo.jpg'>
+        <img src='../asset/pdf/logo.jpg'>
         <h1>MANDAT</h1>
         <span>
             <br>
@@ -94,7 +94,7 @@ $html = "
         </span>
         <!-- Parti cerfa logo -->
         <div class='cerfa_logo'>
-            <img src='./src/logo_cerfa.png' >
+            <img src='../asset/pdf/logo_cerfa.png' >
             <span>N° 13757*03</span>
         </div>
     </div>
@@ -218,7 +218,7 @@ $html = "
                     <h5  >Véhicule concerné :</h5>
                 </div>
                 <div style='position: absolute; top: 50px;'>
-                    <img src='./src/fleche.png' style='width: 20px;' >
+                    <img src='../asset/pdf/fleche.png' style='width: 20px;' >
                     <span>Marque :</span>
                     <div style='position: absolute; width: 450px; left: 100px; top: 20px;'>
                         <div style='border-bottom: 1px solid black; ' ></div>
@@ -227,7 +227,7 @@ $html = "
                     <span style='position: absolute; top: -13px; left: 545px; top: 6.7px;' >|</span>
                 </div>
                 <div style='position: absolute; top: 120px;'>
-                    <img src='./src/fleche.png' style='width: 20px;' >
+                    <img src='../asset/pdf/fleche.png' style='width: 20px;' >
                     <span>Numéro VIN :</span>
                     <div style='position: absolute; width: 340px; left: 120px; top: 20px;'>
                         <div style='border-bottom: 1px solid black;' ></div>
@@ -252,7 +252,7 @@ $html = "
                     <span style='position: absolute; top: -13px; left: 455px; top: 6.7px;' >|</span>
                 </div>
                 <div style='position: absolute; top: 190px;'>
-                    <img src='./src/fleche.png' style='width: 20px;' >
+                    <img src='../asset/pdf/fleche.png' style='width: 20px;' >
                     <span>Numéro d’immatriculation (le cas échéant) :</span>
                     <div>
                     

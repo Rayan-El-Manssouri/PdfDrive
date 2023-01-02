@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+html {
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    background-color: #79a9ddc7;
+}
+
+
+header img{
+    width: 104px;
+    position: relative;
+    left: 5px;
+}
+
+header{
+    background-color: #3f80c6;
+    position: relative;
+    width: 120px;
+    height: 100%;
+}
+
+/* Tableaux */
+.siv_table_pdf{
+    position: absolute;
+    left: 200px;
+    color: #fff;
+    top: 0;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.8em;
+    min-width: 400px;
+}
+
+.siv_table_pdf table thead tr{
+    background-color: #fff;
+    color: black;
+    text-align: left;
+    font-weight: bold;
+}
+
+.siv_table_pdf th,
+.siv_table_pdf td{
+    padding: 12px 15px;
+}
+
+.siv_table_pdf tbody tr:hover{
+    background-color: #fff;
+    color: black;
+}
