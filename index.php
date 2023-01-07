@@ -1,3 +1,6 @@
+<!--
+    Pour cocher les cases a cocher d'une inout il faut le faire comme ça : <input type='checkbox' checked='checked'>
+-->
 <!DOCTYPE html>
 <html lang="fr">
 <head>
